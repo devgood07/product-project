@@ -1,6 +1,12 @@
 # [MUSINSA] Java Backend Engineer - 과제
 
-
+ 
+## 개발환경
+- Sdk 및 Language level : Java17
+- Spring Boot 3.3.5
+- Gradle
+- 로컬DB(H2) (mysql)
+  
 ## 구현범위
 
 ### API 명세
@@ -107,16 +113,13 @@
   - repository : JPA 레포지토리 인터페이스
   - service : 비즈니스 로직을 처리하는 서비스 클래스
   - util : 유틸리티 클래스
-  - validation : API 요청에 대한 검증을 처리하는 클래스
- 
+  - validation : API 요청에 대한 검증을 처리하는 클래스 
 
 ## 코드 빌드
 Gradle 을 통한 빌드를 수행합니다.
-- File - Settings - Build - Compiler - Annotation Processors - Enable annotation processing 체크
+- Preferences > Build, Execution, Deployment > Compiler > Annotation Processors Enable annotation processing 체크
 - query dsl 사용하기 위한 Q 파일 생성 build
-  - intellij > gradle에서 Tasks -> other -> compileQuerydsl 
-  - 터미널에서 해당 위치로가서 컴파일 하는것과 동일
-    - `gradlew compileQuerydsl`
+  - intellij > gradle에서 Tasks > other > compileQuerydsl
 
 ## 실행 방법
 빌드 후에는 다음과 같이 실행할 수 있습니다.
@@ -145,10 +148,3 @@ Gradle 을 통한 빌드를 수행합니다.
   - `product/src/test/java/com/musinsa/product/util/*.java` > Run
   - `product/src/test/java/com/musinsa/product/validation/*.java` > Run
 
-
-## 개발환경
-
-- Sdk 및 Language level : Java17
-- Spring Boot 3.3.5
-- Gradle
-- 로컬DB(H2) (mysql)
