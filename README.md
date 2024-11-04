@@ -111,7 +111,7 @@
 - com.musinsa.product
   - controller : API 요청을 처리하는 컨트롤러 클래스
   - entity : JPA 엔티티 클래스
-  - repository : JPA 레포지토리 인터페이스
+  - repository : JPA 레포지토리
   - service : 비즈니스 로직을 처리하는 서비스 클래스
   - util : 유틸리티 클래스
   - validation : API 요청에 대한 검증을 처리하는 클래스 
