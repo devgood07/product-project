@@ -86,8 +86,8 @@ public class ProductRepositoryImpl implements ProductRepositoryCustom {
         QProduct product = QProduct.product;
 
         return queryFactory.selectFrom(product)
-                .join(product.category, QCategory.category).fetchJoin()  // Category fetch join
-                .join(product.brand, QBrand.brand).fetchJoin()  // Brand fetch join
+                .join(product.category, QCategory.category).fetchJoin()
+                .join(product.brand, QBrand.brand).fetchJoin() 
                 .where(product.category.name.eq(categoryName))
                 .orderBy(product.price.asc(), product.id.asc())
                 .limit(1)
