@@ -24,11 +24,6 @@ class BrandDataServiceImplTest {
     @Autowired
     private BrandRepository brandRepository;
 
-    @BeforeEach
-    void setUp() {
-        // 필요시 초기 설정 로직을 추가할 수 있습니다.
-    }
-
     @Test
     @DisplayName("기존 브랜드가 존재하면 조회 - findByNameOrElseSave")
     void findByNameOrElseSave_ExistingBrand() {
