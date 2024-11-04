@@ -17,10 +17,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-//주석 설명 추가
-//read me 작성
-//라인 맞추기.
-//git hub
+
 
 /**
  *  브랜드 및 상품 수정 API 통합 테스트
